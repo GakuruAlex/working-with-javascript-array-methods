@@ -36,6 +36,7 @@ const feedMe = {
 breakfast : "Bacon",
 lunch : "Beef",
 supper : "Pizza",
+
 };
 
 console.log(`meals object  before destructive modification `,meals);
@@ -51,9 +52,11 @@ destructivelyUpdateObject( meals,meal3, "Eggs");
 
 console.log(`Meals object  after destructive modification `,meals);
 
-destructivelyUpdateObject( feedMe,["supper"], "Chapati");
+destructivelyUpdateObject( feedMe,"supper", "Chapati",);
 
 console.log(`FeedMe object after destructive modification `,feedMe);
+
+
 
 
 
