@@ -31,16 +31,21 @@ function addElementsWithUnshift(customArray,elementToAdd){
 
     console.log(`Array after unshift: ${customArray}`);
 
-
-
 }
 
 /*using the spread operator to add element to start of array
 non destructive */
+
+console.log(`Array before using spread operator: ${superHeroes}` );
+
 const newSuperheroesSpreadOperator=["CatWoman", ...superHeroes];
 
-addElementsWithUnshift(superHeroes,"Doctor Strange");
+
 
 console.log(`New superheroes array using spread operator ["CatWoman", ...superHeroes] is ${newSuperheroesSpreadOperator} `);
 
-/* Using the  */
+/* Using the  spread operator to add an element to end of array*/
+const newSuperheroesSprdOprtr=[ ...superHeroes , "CatWoman"];
+
+
+console.log(`New superheroes array using spread operator [ ...superHeroes, "CatWoman"] is ${ newSuperheroesSprdOprtr} `);

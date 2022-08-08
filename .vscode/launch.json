@@ -20,7 +20,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/addElements.js"
+            "program": "${workspaceFolder}/modifyObjects.js"
         }
     ]
 }
