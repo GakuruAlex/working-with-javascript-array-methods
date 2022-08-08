@@ -52,10 +52,39 @@ destructivelyUpdateObject( meals,meal3, "Eggs");
 
 console.log(`Meals object  after destructive modification `,meals);
 
-destructivelyUpdateObject( feedMe,"supper", "Chapati",);
+destructivelyUpdateObject( feedMe,"supper", "Chapati");
 
 console.log(`FeedMe object after destructive modification `,feedMe);
 
+
+
+const tvShows = {
+
+   syFy : "StarGate",
+   action : "Bones",
+   medi : "Grey's Anatomy",
+
+
+};
+
+function nonDestructivelyModifyObject(obj ,key ,value){
+
+    newObj ={...obj};
+
+    newObj[key] = value;
+
+    return newObj;
+}
+console.log(`\n`);
+
+
+console.log(`TvShows object before nonDestructive modification ` , tvShows);
+
+nonDestructivelyModifyObject(tvShows,"action","Seal Team");
+
+console.log(`TvShows object after nonDestructive modification` ,tvShows);
+
+console.log(`New object after modification `,nonDestructivelyModifyObject(tvShows,"action","Seal Team"));
 
 
 
